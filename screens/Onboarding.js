@@ -39,7 +39,7 @@ const Onboarding = ({ navigation }) => {
               borderWidth: 1,
               padding: 10,
               fontSize: 16,
-              borderColor: "EDEFEE",
+              borderColor: "gray",
             }}
             value={name}
             onChangeText={setName}
@@ -66,7 +66,7 @@ const Onboarding = ({ navigation }) => {
               borderWidth: 1,
               padding: 10,
               fontSize: 16,
-              borderColor: "EDEFEE",
+              borderColor: "gray",
             }}
             value={email}
             onChangeText={setEmail}
@@ -78,7 +78,9 @@ const Onboarding = ({ navigation }) => {
       </View>
       <View style={{ backgroundColor: "white", width: "80%" }}>
         <Button
-          onPress={() => navigation.navigate("Profile")}
+          onPress={() => {
+            navigation.navigate("Profile");
+          }}
           disabled={!(isEmailValid && name !== "")}
         >
           Next

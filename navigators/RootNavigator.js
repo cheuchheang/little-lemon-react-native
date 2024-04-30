@@ -21,7 +21,7 @@ const RootNavigator = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="LITTLE LEMON"
+        name="Onboarding"
         component={Onboarding}
         options={{
           headerTitle: (props) => <CustomHeader {...props} />,
